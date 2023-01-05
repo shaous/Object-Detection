@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -24,6 +28,10 @@
   color: white;
 }
 
+video {
+  border-radius: 15px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
