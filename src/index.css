@@ -9,8 +9,3 @@ body {
   padding: 0;
   margin: 0;
 }
-
-canvas {
-  border-radius: 15px;
-  font-weight: 900;
-}

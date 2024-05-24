@@ -52,36 +52,16 @@ function App()
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-container">
         <Webcam
           ref={webcamRef}
           muted={true}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 9,
-            width: 1800,
-            height: 980,
-          }}
+          className="webcam-output"        
         />
 
         <canvas
           ref={canvasRef}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 8,
-            width: 700,
-            height: 980,
-          }}
+          className="webcam-canvas"          
         />
       </header>
     </div>

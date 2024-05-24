@@ -2,23 +2,12 @@ body {
   overflow: hidden;
 }
 
-.App {
-  text-align: center;
-}
+.App-container {
+  background-color: #F4D03F;
+  background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,20 +17,45 @@ body {
   color: white;
 }
 
-video {
-  border-radius: 15px;
+.webcam-output {
+  /* position: absolute; */
+  background-color: #F4D03F;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* z-index: 9; */
+  width: 1000px;
+  height: 750px;
+  overflow: hidden;
+  border-radius: 18px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.webcam-canvas {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 8;
+  width: 700px;
+  height: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+
+  .webcam-output {
+    background-color: transparent;
+    width: 450px;
+    height: 338px;
+    border-radius: 18px !important;
   }
 
-  to {
-    transform: rotate(360deg);
+  .webcam-canvas {
+    width: 250px;
+    height: 200px;
   }
+
 }
