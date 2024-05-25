@@ -47,9 +47,9 @@ body {
 @media screen and (max-width: 768px) {
 
   .webcam-output {
-    background-color: transparent;
-    width: 450px;
-    height: 338px;
+    /* background-color: transparent; */
+    width: 90%;
+    height: 265px;
     border-radius: 18px !important;
   }
 
